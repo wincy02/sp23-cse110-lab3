@@ -2,15 +2,16 @@
 <html lang="en">
     <head>
         <meta charset = "UTF-8">
-        <link rel="icon", href="favicon.jpg">
+        <link rel="icon" href="favicon.jpg">
+        <title>Meeting Minutes</title>
     </head>
     <body>
         <main>
             <header>
                 <h1>VR Role-playing Game Development (Second Session)</h1>
                 <h2>Kick-off meeting</h2>
-                <img src="https://media3.giphy.com/media/pylpD8AoQCf3CQ1oO2/200w.gif?cid=6c09b952hcax04ytjicycjbi4wzfj31qb3b2ytihu99ib4n5&rid=200w.gif&ct=g">
-                <title>Meeting Minutes</title>
+                <img src="https://media3.giphy.com/media/pylpD8AoQCf3CQ1oO2/200w.gif?cid=6c09b952hcax04ytjicycjbi4wzfj31qb3b2ytihu99ib4n5&rid=200w.gif&ct=g" alt="gif">
+                
 
           
             </header>
@@ -27,30 +28,30 @@
                 <h3>Date: <em>4/20/2023</em></h3>
                 <h3>Location: <em>Meeting</em> <em>room</em></h3>
                 <h3>Attendance list </h3>
-                <table cellspacing="3" bgcolor="#000000">
-                    <tr bgcolor="#ffffff">  
-                        <th>Name</th>
-                        <th>Job Title</th>
+                <table>
+                    <tr>  
+                        <th><em>Name</em></th>
+                        <th><em>Job Title</em></th>
                     </tr>
 
-                    <tr bgcolor="#ffffff" >
+                    <tr>
                         <th>Tom Johnson</th>
                         <th>Game Art Director</th>
                     </tr>
-                    <tr bgcolor="#ffffff" >
+                    <tr>
                         <th>Celeste Lawrence</th>
                         <th>Game Music Director</th>
                     </tr>
-                    <tr bgcolor="#ffffff" >
+                    <tr>
                         <th>Olivia Zach</th>
                         <th>Game Design Director</th>
                     </tr>
 
-                    <tr bgcolor="#ffffff" >
+                    <tr>
                         <th>Katherine Fisher</th>
                         <th>Technical Director</th>
                     </tr>
-                    <tr bgcolor="#ffffff" >
+                    <tr>
                         <th>Bosco Francisco</th>
                         <th>CFO</th>
                     </tr>
@@ -72,7 +73,8 @@
             <section>
                 <div id="next">
                     <h2>Discussion</h2>
-                    <img src="https://developer.okta.com/assets-jekyll/blog/whiteboarding-for-developers/whiteboard-example-2555d56b7edbdebd9768dddbb47a4753148fb06c2498d2682b150748bf6e6e74.jpg">
+                    <img src="https://developer.okta.com/assets-jekyll/blog/whiteboarding-for-developers/whiteboard-example-2555d56b7edbdebd9768dddbb47a4753148fb06c2498d2682b150748bf6e6e74.jpg"
+                    alt="whiteboard">
                     <br>
                     <h3><strong>Unfinised busniess from last meeting</strong></h3>
                     <ol>
@@ -80,32 +82,45 @@
                         <li><i>Marketing and promotion plan</i></li>
                         <li><em>Budget</em></li>
                     </ol>
-                    
+                    <h3>Action items</h3>
+                    <details>
+                        <summary>Character desin draft</summary>
+                        -to be completed by the art team<br>
+                        -due next <i><b>Friday</b></i>
+                    </details>
+
+                    <details>
+                        <summary>Establish marketing and promotion plan</summary>
+                        -to be completed by the marketing team<br>
+                        -due next <i><b>Monday</b></i>
+                  
+                    </details>
+                    <br>
                     <label for="thoughts">Share your thoughts:</label><br>
                     <textarea id="thoughts" name="thoughts" rows="20"
-                                cols="15">
+                                cols="35">
                     </textarea>
-                    <form action="" method="get">
+                    <form action="/action_page.php" method="get">
                         <fieldset>
                             <label for="name">Enter your name:</label>
                             <input list="users" name="name" id="name">(anonymous put 
-                                <b>n/a</b>) <br><br>
-                            <datslist id="users">
-                                <option value="rabbit"></option>
-                                <option value="cat"></option>
-                                <option value="n/a"></option>
-                                <option value="bulldog"></option>
-                            </datslist>
-
+                                <b>n/a</b>)<br>
+                            <datalist id="users">
+                                <option value="rabbit">
+                                <option value="cat">
+                                <option value="n/a">
+                                <option value="bulldog">
+                            </datalist>
                             <label for="option">Choose a category</label>
                             <select name="category" id="option">
+                                <option value="">--Please select an option--</option>
                                 <option value="comment">Comment</option>
                                 <option value="question">Question</option>
                                 <option value="concern">Concern</option>
                             </select>
 
                         </fieldset>
-                        <button type="save">Save</button>
+                        <button type="submit">Save</button>
                         
                     </form>
                 </div>
@@ -113,6 +128,15 @@
             <section>
                 <div id="conclusion">
                     <h2>Conclusion</h2>
+                    <span>
+                        <p>
+                            During the meeting, we discussed the approximate cost of the project and developed a project 
+                            timeline and milestones. Team members also discussed the game marketing and promotion plan 
+                            and finalized the storyline and characterization. Through this discussion, team members 
+                            clarified each individual's roles and responsibilities and developed clear action items to 
+                            ensure the project moved forward as planned. 
+                        </p>
+                    </span>
                      <video controls width="500" height="400">
                         <source src="video.mp4" type="video/mp4">
                     </video><br><br>
