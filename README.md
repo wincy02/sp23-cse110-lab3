@@ -1,4 +1,4 @@
-# Lab 2 - Starter
-[view site w/o login](https://wincy02.github.io/Lab2_Starter/)
+# Lab 3
+[click here to view](https://wincy02.github.io/sp23-cse110-lab3/)
 
-[view site with login](https://wincy02.github.io/login-page/)
+
