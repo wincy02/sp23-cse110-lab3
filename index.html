@@ -1,5 +1,44 @@
 <!DOCTYPE html> 
 <html lang="en">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Fantasy">
+<style>
+    /*set background color to each section*/
+    h1{background: lightblue;}
+    /*set all text color to white/light color*/
+    h2{color:white;}
+    h3{color:white}
+    /*menu*/
+    ul{background-color:beige; border-radius:12px; padding:20px;width:100px; margin-left:100px;}
+    table{margin-top:5px; margin-bottom: 50px;margin-left: 50px;margin-right: 50px; color:bisque}
+    th{border:1px solid}
+    body{background-image:url(background.jpeg) ;background-attachment:fixed; z-index:-1}
+    p{color:azure}
+    footer{color: bisque;}
+    ol{color:bisque}
+    details{color:beige}
+    label{color:beige}
+    input{color:beige}
+    img{z-index: -1; position:relative}
+    header{position:sticky; top:0;}
+    a:link{color:red}
+    a:visited{color:darksalmon}
+    a:hover{color:gold}
+    a:active{color:blueviolet}
+    span{display:block}
+    /*images and video will not be shown on small screen*/
+    @media screen and (max-width:600px) {
+        img{display:none}
+        video{display:none}
+    }
+
+
+
+    
+
+
+
+</style>
     <head>
         <meta charset = "UTF-8">
         <link rel="icon" href="favicon.jpg">
@@ -8,13 +47,16 @@
     <body>
         <main>
             <header>
-                <h1>VR Role-playing Game Development (Second Session)</h1>
-                <h2>Kick-off meeting</h2>
-                <img src="https://media3.giphy.com/media/pylpD8AoQCf3CQ1oO2/200w.gif?cid=6c09b952hcax04ytjicycjbi4wzfj31qb3b2ytihu99ib4n5&rid=200w.gif&ct=g" alt="gif">
-                
+                <div class="title">
+                    <h1>VR Role-playing Game Development (Second Session)</h1> 
+                </div>
+               
 
-          
             </header>
+            <h2>Kick-off meeting</h2>
+            <img src="https://media3.giphy.com/media/pylpD8AoQCf3CQ1oO2/200w.gif?cid=6c09b952hcax04ytjicycjbi4wzfj31qb3b2ytihu99ib4n5&rid=200w.gif&ct=g" alt="gif">
+
+            <link rel="stylesheet" href="mystyle.css">
             <nav class="menu">
                 <ul>
                     <li><a href="#intro">Introduction</a></li>
@@ -26,12 +68,12 @@
             <div id="intro">
                 <h2>Host: Willow Larson (Game Producer)</h2>
                 <h3>Date: <em>4/20/2023</em></h3>
-                <h3>Location: <em>Meeting</em> <em>room</em></h3>
-                <h3>Attendance list </h3>
-                <table>
+                <h3>Location: <em style="text-decoration: line-through;">Meeting</em> <em style="text-decoration: line-through;">room</em><a href="https://zoom.us/signin#/login">Zoom meeting</a> </h3>
+                <h3 style="margin: 25px 50px 10px 80px; border:5px solid black; width:150px; padding-left: 12px; color:aliceblue">Attendance list </h3>
+                <table style="border-width: 3px; border-style: solid; border-color:black" >
                     <tr>  
-                        <th><em>Name</em></th>
-                        <th><em>Job Title</em></th>
+                        <th style="font-family:Papyrus,fantasy ; font-size: 25px;"><em>Name</em></th>
+                        <th style="font-family:Papyrus,fantasy ; font-size: 25px;"><em>Job Title</em></th>
                     </tr>
 
                     <tr>
@@ -102,9 +144,9 @@
                     </textarea>
                     <form action="https://wincy02.github.io/Lab2_Starter/" method="get">
                         <fieldset>
-                            <label for="name">Enter your name:</label>
-                            <input list="users" name="name" id="name">(anonymous put 
-                                <b>n/a</b>)<br>
+                            <label for="name">Enter your name:(anonymous put 
+                                <b>n/a</b>)</label>
+                            <input list="users" name="name" id="name"><br>
                             <datalist id="users">
                                 <option value="rabbit">
                                 <option value="cat">
@@ -129,9 +171,9 @@
                 <div id="conclusion">
                     <h2>Conclusion</h2>
                     <p>
-                        During the meeting, we discussed the <span>approximate cost</span> of the project and developed a <span>project 
-                        timeline and milestones</span>. Team members also discussed the <span>marketing and promotion plan 
-                        </span>and <span>finalized the storyline and characterization</span>. 
+                        During the meeting, we discussed the <span>approximate cost of the project and developed a  project 
+                        timeline and milestones.</span> Team members also discussed the <span>marketing and promotion plan 
+                        and finalized the storyline and characterization.</span>
                     </p>
                      <video controls width="500" height="400">
                         <source src="video.mp4" type="video/mp4">
@@ -152,4 +194,5 @@
         </footer>
 
     </body>
+
 </html>
