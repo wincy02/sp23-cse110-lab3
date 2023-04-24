@@ -1,10 +1,82 @@
-.top{
-    background-color: aliceblue;
+*{
+    text-align: left;
 }
-.bottom{
-    background-color: aliceblue;
+.grid-container{
+    display:grid;
+    grid-template: repeat(3,1fr)/repeat(3,1fr);
+    column-gap:5px;
+    row-gap: 5px;
+    background-color:lightslategray;
+    padding:20px;
+    width:220pt;
+    height:282pt;
+    border-radius:1em;
+
 }
-body{
-    color:navy;
-    background-color: beige;
+
+
+.grid-item{
+    background-color: honeydew;
+
+    display:flex;
+    font-size: 1.8rem;
+    border-radius:0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex-container{
+    background-color:azure;
+    display:flex;
+    width:15cm;
+    border-radius: 0.5em;
+}
+
+.flex-container > div{
+    margin:10px;
+    padding:20px;
+    font-size: 5ch;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#a{
+    text-align: center;
+}
+
+input[type="text"]{
+    display:block;
+    background-color: blueviolet;
+
+}
+input[type="button"]{
+    align-items: center;
+    background-color: blueviolet;
+    font-size: medium;
+    
+}
+
+table tr th{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center ;
+}
+/*adjacent sibling selector*/
+div +p{
+    text-align: center;
+    background-color: chocolate;
+}
+
+/*general sibling selector*/
+h2 ~p{
+    font-family: audiowide;
+    font-size: larger;
+
+}
+
+p.mp3{
+    font-weight: bold;
+    font-size: larger;
+
 }
