@@ -1,13 +1,13 @@
 <!DOCTYPE html> 
 <html lang="en">
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Fantasy">
+<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Fantasy|Audiowide&effect=neon|outline|emboss|fire|shadow-multiple">
 <style>
     /*set background color to each section*/
-    h1{background: lightblue;}
+    h1{text-align: center; font-family: "sofia",sans-serif;font-size: 80px;}
     /*set all text color to white/light color*/
-    h2{color:white;}
-    h3{color:white}
+    h2,h3{color:white;}
+  
     /*menu*/
     ul{background-color:beige; border-radius:12px; padding:20px;width:100px; margin-left:100px;}
     table{margin-top:5px; margin-bottom: 50px;margin-left: 50px;margin-right: 50px; color:bisque}
@@ -15,7 +15,7 @@
     body{background-image:url(background.jpeg) ;background-attachment:fixed; z-index:-1}
     p{color:azure}
     footer{color: bisque;}
-    ol{color:bisque}
+    ol{color:bisque;}
     details{color:beige}
     label{color:beige}
     input{color:beige}
@@ -31,11 +31,9 @@
         img{display:none}
         video{display:none}
     }
-
-
-
-    
-
+    h2.a{
+        font-family: "Audiowide",serif;
+    }
 
 
 </style>
@@ -48,15 +46,16 @@
         <main>
             <header>
                 <div class="title">
-                    <h1>VR Role-playing Game Development (Second Session)</h1> 
+                    <h1 class="font-effect-fire">Game Development</h1> 
                 </div>
                
 
             </header>
-            <h2>Kick-off meeting</h2>
+            <h2 class="a">Brainstorm meeting</h2>
             <img src="https://media3.giphy.com/media/pylpD8AoQCf3CQ1oO2/200w.gif?cid=6c09b952hcax04ytjicycjbi4wzfj31qb3b2ytihu99ib4n5&rid=200w.gif&ct=g" alt="gif">
+          
 
-            <link rel="stylesheet" href="mystyle.css">
+            
             <nav class="menu">
                 <ul>
                     <li><a href="#intro">Introduction</a></li>
@@ -65,11 +64,30 @@
                     <li><a href="#conclusion">Conclusion</a></li>
                 </ul>
             </nav>
+       
+
             <div id="intro">
                 <h2>Host: Willow Larson (Game Producer)</h2>
                 <h3>Date: <em>4/20/2023</em></h3>
+
+                <div class="flex-container">
+                    <div>1</div>
+                    <div>0</div>
+                    <div>:</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>AM</div>
+               
+                </div>
                 <h3>Location: <em style="text-decoration: line-through;">Meeting</em> <em style="text-decoration: line-through;">room</em><a href="https://zoom.us/signin#/login">Zoom meeting</a> </h3>
+                <h3>Sign-in Form:</h3>
+                <form name="input" action="" method="get" style="color:beige">
+                    Firstname:<input type="text" name="Name" size="30" > <br>
+                    Lastname:<input type="text" name="Name" size="30"><br>
+                    <input type="button" value="Submit">
+                </form>
                 <h3 style="margin: 25px 50px 10px 80px; border:5px solid black; width:150px; padding-left: 12px; color:aliceblue">Attendance list </h3>
+                
                 <table style="border-width: 3px; border-style: solid; border-color:black" >
                     <tr>  
                         <th style="font-family:Papyrus,fantasy ; font-size: 25px;"><em>Name</em></th>
@@ -106,11 +124,29 @@
                     <h2>Agenda</h2>
                     <ol>
                         <li>Introduce the concept to all participants</li>
-                        <li>Discuss graphic designs</li>
+                        <li>Mobile version UX designs</li>
+                        <li>Laptop/Desktop version UX designs</li>
                         <li>Budget and possible cost</li>
                     </ol>
                 </div>
             </section>
+            <div class="grid-container">
+                <div class="grid-item"> O</div>
+                <div class="grid-item"> X</div>
+                <div class="grid-item"> O</div>
+                <div class="grid-item"> X </div>
+                <div class="grid-item"> O</div>
+                <div class="grid-item"> X </div>
+                <div class="grid-item"> X</div>
+                <div class="grid-item">X</div>
+                <div class="grid-item"> O </div>
+              
+           
+          
+                
+          
+          
+            </div>
             <hr>
             <section>
                 <div id="next">
@@ -175,19 +211,26 @@
                         timeline and milestones.</span> Team members also discussed the <span>marketing and promotion plan 
                         and finalized the storyline and characterization.</span>
                     </p>
-                     <video controls width="500" height="400">
-                        <source src="video.mp4" type="video/mp4">
-                    </video><br><br>
-    
-                    <audio controls>
-                        <source src="audio.mp3" >
-                    </audio>
-                        
+                         
                 </div>
+                
+                <p>A video clip that we watched during the meeting. It's a fun and entertaining video that we thought everyone would enjoy, 
+                    and we hope you get a chance to watch it!</p>
+                <video controls width="500" height="400">
+                    <source src="video.mp4" type="video/mp4">
+                </video><br>
+                <p class="mp3">Here is an fun audio that we found during our meeting. Enjoy it.:D</p>
+                <audio controls>
+                    <source src="audio.mp3" >
+                </audio>
             </section>
             
+
+
+            
         </main>
-        <footer><small>Copyright © 2023 ihavealwaysbeenwithu. All Rights 
+
+        <footer id="a"><small>Copyright © 2023 ihavealwaysbeenwithu. All Rights 
             Reserved.
 
         </small>
