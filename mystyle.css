@@ -86,3 +86,15 @@ p.mp3{
     font-size: larger;
 
 }
+
+.menu{
+    position:sticky;
+    position:-webkit-sticky;
+    top:0;
+    background-color:navy;
+    border: 1px solid black;
+    /*opacity: 0.8;*/
+
+    width: 180px;
+    border-radius: 2mm;
+}
